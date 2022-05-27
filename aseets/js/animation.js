@@ -1,3 +1,4 @@
+/*
 gsap.set('.back-img__1', { autoAlpha: 0 });
 gsap.set('.back-img__2', { autoAlpha: 0 });
 
@@ -17,3 +18,9 @@ gsap.to('.back-img__2', {
         markers: false
     }
 });
+*/
+
+window.onload = function () {
+    const spinner = document.getElementById('loading');
+    spinner.classList.add('loaded');
+}

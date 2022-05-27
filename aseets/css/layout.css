@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+embed,
+main,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+caption,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+source {
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    font-size: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.fixed-background {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-1 {
+    background-image: url("../img/IMG_1515.jpeg");
+}
+
+.background-2 {
+    background-image: url("../img/IMG_1518.jpeg");
+}
+
+.back-img {
+    display: flex;
+    justify-content: center;
+}
+
+.back-img img {
+    width: auto;
+    height: 100vh;
+}
+
+.back-img h1 {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: red;
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (max-width: 767px) {}

@@ -39,6 +39,7 @@
                     var $target = $('.fixed-background');
                     var $winWidth = $(window).width();
                     if (ua.indexOf("iPhone") > 0 || ua.indexOf("iPad") > 0 || ua.indexOf("iPod") > 0) {
+                        $('.fixed-background').css('background-attachment', 'scroll');
                         $target.each(function (index) {
                             var $position = $winTop - $target.eq(index).offset().top;
                             if ($winTop > $target.eq(index).offset().top - 800) {
@@ -48,6 +49,8 @@
                             }
                         });
                     }
+                    else
+                        $('.fixed-background').css('background-attachment', 'fixed');
                 });
             });
         }();

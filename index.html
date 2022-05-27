@@ -31,30 +31,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./aseets/js/animation.js"></script>
-    <script type="text/javascript">var parallaxBkImg = function () {
-            var ua = navigator.userAgent;
-            $(window).on('load resize', function () {
-                $(window).on('load scroll', function () {
-                    var $winTop = $(window).scrollTop();
-                    var $target = $('.fixed-background');
-                    var $winWidth = $(window).width();
-                    if (ua.indexOf("iPhone") > 0 || ua.indexOf("iPad") > 0 || ua.indexOf("iPod") > 0) {
-                        $('.fixed-background').css('background-attachment', 'scroll');
-                        $target.each(function (index) {
-                            var $position = $winTop - $target.eq(index).offset().top;
-                            if ($winTop > $target.eq(index).offset().top - 800) {
-                                $target.eq(index).css({
-                                    'background-position-y': $position * .4
-                                });
-                            }
-                        });
-                    }
-                    else
-                        $('.fixed-background').css('background-attachment', 'fixed');
-                });
-            });
-        }();
-    </script>
 </body>
 
 </html>

@@ -54,7 +54,8 @@
                             var $position = $winTop - $target.eq(index).offset().top;
                             if ($winTop > $target.eq(index).offset().top - 800) {
                                 $target.eq(index).css({
-                                    'background-position-y': $position * .4
+                                    'background-position-y': $position * .4,
+                                    'background-attachment': scroll
                                 });
                             }
                         });

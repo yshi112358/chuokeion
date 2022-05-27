@@ -104,17 +104,7 @@ body {
     background-image: url("../img/IMG_1518.jpeg");
 }
 
-.back-img {
-    display: flex;
-    justify-content: center;
-}
-
-.back-img img {
-    width: auto;
-    height: 100vh;
-}
-
-.back-img h1 {
+.background-1 h1 {
     position: absolute;
     top: 50%;
     font-size: 40px;

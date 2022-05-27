@@ -6,7 +6,7 @@ gsap.to('.back-img__1', {
     scrollTrigger: {
         trigger: '.back-img__1',
         start: 'top center',
-        markers: true
+        markers: false
     }
 });
 gsap.to('.back-img__2', {
@@ -14,6 +14,6 @@ gsap.to('.back-img__2', {
     scrollTrigger: {
         trigger: '.back-img__2',
         start: 'top center',
-        markers: true
+        markers: false
     }
 });

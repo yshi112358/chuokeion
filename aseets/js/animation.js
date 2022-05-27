@@ -20,7 +20,7 @@ gsap.to('.back-img__2', {
 });
 */
 
-window.onload = function () {
+window.addEventListener("load", function () {
     const spinner = document.getElementById('loading');
     spinner.classList.add('loaded');
-}
+});

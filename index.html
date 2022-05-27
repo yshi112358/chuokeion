@@ -49,7 +49,7 @@
                     var $winTop = $(window).scrollTop();
                     var $target = $('.fixed-background');
                     var $winWidth = $(window).width();
-                    if ($winWidth < 750) {
+                    if (ua.indexOf("iPhone") > 0) {
                         $target.each(function (index) {
                             var $position = $winTop - $target.eq(index).offset().top;
                             if ($winTop > $target.eq(index).offset().top - 800) {

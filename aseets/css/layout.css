@@ -138,6 +138,8 @@ body {
     visibility: hidden;
 }
 
+/*ローディング終了*/
+
 
 
 .fixed-background {
@@ -164,4 +166,9 @@ body {
 
 @media screen and (min-width: 768px) {}
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .fixed-background {
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}

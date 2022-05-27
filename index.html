@@ -40,7 +40,29 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./aseets/js/animation.js"></script>
+    <script type="text/javascript">var parallaxBkImg = function () {
+            $(window).on('load resize', function () {
+                $(window).on('load scroll', function () {
+                    var $winTop = $(window).scrollTop();
+                    var $target = $('.cd-fixed-bg');
+                    var $winWidth = $(window).width();
+                    if ($winWidth < 750) {
+                        $target.each(function (index) {
+                            var $position = $winTop - $target.eq(index).offset().top;
+                            if ($winTop > $target.eq(index).offset().top - 800) {
+                                $target.eq(index).css({
+                                    'background-position-y': $position * .4
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+        }();
+    </script>
 </body>
 
 </html>

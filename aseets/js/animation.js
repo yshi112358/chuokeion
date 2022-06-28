@@ -3,6 +3,16 @@ window.addEventListener("load", function () {
     spinner.classList.add('loaded');
 });
 
+//スムーススクロールのスクリプト
+$(function(){
+    $('a[href^="#"]').click(function(){
+        var href = $(this).attr('href');
+        var target = href == '#' ? 0 : $(href).offset().top;
+            $('body,html').animate({scrollTop:target},500);
+            return false;
+    });
+});
+
 gsap.timeline({
     scrollTrigger: {
         trigger: "#top",

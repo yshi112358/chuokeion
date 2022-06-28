@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
     spinner.classList.add('loaded');
 });
 
-gsap.timeline({
+const tl = gsap.timeline({
     scrollTrigger: {
         trigger: "#top",
         start: "top top",

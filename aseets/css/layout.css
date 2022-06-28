@@ -144,7 +144,7 @@ body {
 
 /* メニューバー */
 .menubar {
-    position: absolute;
+    position: fixed;
     z-index: 10;
     width: 7%;
     height: 100%;
@@ -185,7 +185,16 @@ body {
 
 /* メイン */
 main {
+    position: relative;
     margin-left: 7%;
+}
+
+.aaa {
+    position: absolute;
+    top: 50px;
+    font-size: 40px;
+    color: red;
+    z-index: 10;
 }
 
 .fixed-background {
@@ -200,13 +209,6 @@ main {
 
 .background-2 {
     background-image: url("../img/IMG_5265.jpeg");
-}
-
-.background-1 h1 {
-    position: absolute;
-    top: 50%;
-    font-size: 40px;
-    color: red;
 }
 
 @media screen and (min-width: 768px) {}

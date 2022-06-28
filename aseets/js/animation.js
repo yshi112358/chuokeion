@@ -1,6 +1,8 @@
 window.addEventListener("load", function () {
-    const spinner = document.getElementById('loading');
-    spinner.classList.add('loaded');
+    gsap.to('#loading', {
+        opacity: 0,
+        visibility: "hidden"
+    })
 });
 
 //スムーススクロールのスクリプト
@@ -172,7 +174,7 @@ gsap.timeline({
             "margin-left": "7%"
         },
             "-=0.2"
-            
+
         ).to(jsMenubar, {
             scaleX: 1
         },

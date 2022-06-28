@@ -214,17 +214,22 @@ main {
 
 /* アバウト */
 #about main {
+    display: flex;
+    align-items: center;
     overflow-x: scroll;
 }
 
-.card {
+.card_list {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin: 10px;
 }
 
 .l-wrapper_02 {
-    margin: 1rem auto;
     width: 380px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .card-radius_02 {

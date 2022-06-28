@@ -267,7 +267,6 @@ main {
     box-shadow: 0 0 0px rgba(0, 0, 0, .16);
     color: #212121;
     text-decoration: none;
-    /* height: 500px; */
 }
 
 .card__header_02 {
@@ -308,7 +307,8 @@ main {
 .card__text2_02 {
     font-size: .8rem;
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
 }
 
 #live {

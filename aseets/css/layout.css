@@ -204,11 +204,11 @@ main {
 }
 
 #top {
-    background-image: url("/aseets/img/IMG_1515.jpeg");
+    background-image: url("../img/IMG_1515.jpeg");
 }
 
 #live {
-    background-image: url("/aseets/img/IMG_5265.jpeg");
+    background-image: url("../img/IMG_5265.jpeg");
 }
 
 @media screen and (min-width: 768px) {}

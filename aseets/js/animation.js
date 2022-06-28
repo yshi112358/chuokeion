@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
     spinner.classList.add('loaded');
 });
 
-const tl = gsap.timeline({
+gsap.timeline({
     scrollTrigger: {
         trigger: "#top",
         start: "top top",
@@ -63,3 +63,99 @@ gsap.timeline({
         markers: true
     },
 });
+
+
+(function () {
+    'use strict';
+
+    /* 文字列を分割しspanで囲む */
+    (function () {
+        const jsSlogan = document.querySelectorAll('.slogan');
+        jsSlogan.forEach(target => {
+            let newText = '';
+            const text = target.textContent;
+            const result = text.split('');
+            for (let i = 0; i < result.length; i++) {
+                newText += '<span>' + result[i] + '</span>';
+            }
+            target.innerHTML = newText;
+        });
+    })();
+
+    /* MVアニメーション */
+    (function () {
+
+
+        /* 以下アニメーション */
+        const jsLoaderBg = '.js-loader-bg'; // カーテン（黒い背景）
+        const jsDot = '.js-loader-dot-wrap > span'; // ドット
+        const jsBubble = '.js-mv-bubble [id*=item]'; // バブル（丸い図形）
+        const jsSlogan = '.slogan span'; // メインビジュアルのタイトル
+        const jsTitle = '.title';
+        const jsMenubar = '.menubar';
+        const jsMain = 'main';
+        const jsLeadText = '.js-mv_title-lead'; // メインビジュアルのリード文
+        const jsHeader = '.js-header'; // ヘッダー
+
+
+        //初期状態をセット
+        gsap.set(
+            [jsBubble, jsSlogan, jsLeadText],
+            //アニメーションさせない静止状態を指定する
+            {
+                opacity: 0,
+                y: 0
+            },
+        );
+
+
+        gsap.set(jsMain, {
+            "margin-left": "0%"
+        });
+
+        gsap.set(jsTitle, {
+        });
+
+        gsap.set(jsMenubar, {
+            transformOrigin: "left",
+            scaleX: 0
+        });
+
+        // timelineを作成
+        const tl = gsap.timeline();
+
+        tl.to(jsDot, {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            delay: 0.8,
+            stagger: {
+                amount: 0.5,
+                from: "start",
+                ease: 'power4.inOut'
+            }
+        }
+        ).to(jsSlogan, {
+            /* 前のアニメーションが完了する0.1秒前に実行 */
+            opacity: 1,
+            y: 0,
+            stagger: {
+                amount: 1,
+                from: "start",
+                ease: "sine.in"
+            }
+        },
+            "-=0.1"
+        ).to(jsMain, {
+            /* 前のアニメーションが完了する0.1秒前に実行 */
+            "margin-left": "7%"
+        },
+            "-=0.2"
+        ).to(jsMenubar, {
+            scaleX: 1
+        },
+            '<'
+        );
+    })();
+
+})();

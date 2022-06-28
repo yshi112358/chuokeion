@@ -206,11 +206,30 @@ main {
     overflow: hidden;
 }
 
-.aaa {
-    top: 50px;
-    font-size: 40px;
+.title {
+    width: 100%;
+}
+
+.slogan {
+    font-size: 9vw;
+    text-align: center;
     color: red;
     z-index: 10;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.slogan span {
+    display: inline-block;
+}
+
+.name {
+    font-size: 7vw;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    white-space: nowrap;
+    width: 100%;
 }
 
 .slide {

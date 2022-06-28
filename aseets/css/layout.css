@@ -202,6 +202,10 @@ main {
 
 
 /* トップ */
+#top {
+    overflow: hidden;
+}
+
 .aaa {
     top: 50px;
     font-size: 40px;
@@ -211,7 +215,7 @@ main {
 
 .slide {
     position: absolute;
-    z-index: -10;
+    z-index: -3;
     animation: anime 36s 0s infinite;
 }
 
@@ -243,6 +247,7 @@ main {
 @keyframes anime {
     0% {
         opacity: 0;
+        z-index: -2;
     }
 
     8% {
@@ -256,7 +261,7 @@ main {
     25% {
         opacity: 0;
         transform: scale(1.2);
-        z-index: 9;
+        z-index: -1;
     }
 
     100% {

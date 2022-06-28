@@ -203,13 +203,13 @@ main {
     background-position: center;
 }
 
-.background-1 {
-    background-image: url("../img/IMG_1515.jpeg");
+.background {}
+
+.background img {
+    width: auto;
+    height: 100vh;
 }
 
-.background-2 {
-    background-image: url("../img/IMG_5265.jpeg");
-}
 
 @media screen and (min-width: 768px) {}
 

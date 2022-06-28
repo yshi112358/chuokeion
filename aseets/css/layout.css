@@ -217,6 +217,7 @@ main {
     display: flex;
     align-items: center;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .card_list {
@@ -227,7 +228,8 @@ main {
 }
 
 .l-wrapper_02 {
-    width: 380px;
+    width: 80vw;
+    max-width: 400px;
     margin-left: 10px;
     margin-right: 10px;
 }

@@ -1,10 +1,3 @@
-window.addEventListener("load", function () {
-    gsap.to('#loading', {
-        opacity: 0,
-        visibility: "hidden"
-    })
-});
-
 //スムーススクロールのスクリプト
 $(function () {
     $('a[href^="#"]').click(function () {
@@ -80,6 +73,13 @@ gsap.timeline({
 (function () {
     'use strict';
 
+    window.addEventListener("load", function () {
+        gsap.to('#loading', {
+            opacity: 0,
+            visibility: "hidden"
+        })
+    });
+
     /* 文字列を分割しspanで囲む */
     (function () {
         const jsSlogan = document.querySelectorAll('.slogan');
@@ -99,7 +99,6 @@ gsap.timeline({
 
 
         /* 以下アニメーション */
-        const jsLoaderBg = '.js-loader-bg'; // カーテン（黒い背景）
         const jsDot = '.js-loader-dot-wrap > span'; // ドット
         const jsBubble = '.js-mv-bubble [id*=item]'; // バブル（丸い図形）
 
@@ -134,6 +133,11 @@ gsap.timeline({
         gsap.set(jsMenubar, {
             transformOrigin: "left",
             scaleX: 0
+        });
+
+        gsap.set(jsDot, {
+            opacity: 0,
+            y: -50
         });
 
         // timelineを作成

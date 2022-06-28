@@ -4,12 +4,12 @@ window.addEventListener("load", function () {
 });
 
 //スムーススクロールのスクリプト
-$(function(){
-    $('a[href^="#"]').click(function(){
+$(function () {
+    $('a[href^="#"]').click(function () {
         var href = $(this).attr('href');
         var target = href == '#' ? 0 : $(href).offset().top;
-            $('body,html').animate({scrollTop:target},500);
-            return false;
+        $('body,html').animate({ scrollTop: target }, 500);
+        return false;
     });
 });
 
@@ -100,22 +100,25 @@ gsap.timeline({
         const jsLoaderBg = '.js-loader-bg'; // カーテン（黒い背景）
         const jsDot = '.js-loader-dot-wrap > span'; // ドット
         const jsBubble = '.js-mv-bubble [id*=item]'; // バブル（丸い図形）
+
         const jsSlogan = '.slogan span'; // メインビジュアルのタイトル
+        const jsName = '.name';
         const jsTitle = '.title';
         const jsMenubar = '.menubar';
         const jsMain = 'main';
+
         const jsLeadText = '.js-mv_title-lead'; // メインビジュアルのリード文
         const jsHeader = '.js-header'; // ヘッダー
 
 
         //初期状態をセット
         gsap.set(
-            [jsBubble, jsSlogan, jsLeadText],
+            [jsSlogan, jsName],
             //アニメーションさせない静止状態を指定する
             {
                 opacity: 0,
-                y: 0
-            },
+                y: 30
+            }
         );
 
 
@@ -145,6 +148,7 @@ gsap.timeline({
                 ease: 'power4.inOut'
             }
         }
+
         ).to(jsSlogan, {
             /* 前のアニメーションが完了する0.1秒前に実行 */
             opacity: 1,
@@ -156,11 +160,19 @@ gsap.timeline({
             }
         },
             "-=0.1"
+
+        ).to(jsName, {
+            opacity: 1,
+            y: 0,
+        },
+            "+=0.5"
+
         ).to(jsMain, {
             /* 前のアニメーションが完了する0.1秒前に実行 */
             "margin-left": "7%"
         },
             "-=0.2"
+            
         ).to(jsMenubar, {
             scaleX: 1
         },

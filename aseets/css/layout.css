@@ -170,6 +170,7 @@ main {
 
 /* トップ */
 #top {
+    position: relative;
     overflow: hidden;
 }
 
@@ -264,6 +265,7 @@ main {
 #about {
     background-image: url("../img/bg03.jpg");
 }
+
 /* アバウト */
 #about main {
     display: flex;

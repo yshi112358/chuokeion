@@ -261,7 +261,9 @@ main {
     }
 }
 
-
+#about {
+    background-image: url("../img/bg03.jpg");
+}
 /* アバウト */
 #about main {
     display: flex;
@@ -361,7 +363,7 @@ main {
 }
 
 #live {
-    background-image: url("../img/IMG_5265.jpeg");
+    background-image: url("../img/bg01.jpg");
 }
 
 @media screen and (min-width: 768px) {}

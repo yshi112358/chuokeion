@@ -19,177 +19,37 @@ html(lang='ja')
             gtag('js', new Date());
             gtag('config', 'G-QGBQMTJ17N');
     body
-        // ローディング画面
         //- #loading
-        // メニューバー
+
         //- nav.menubar
-            ul
-                li
-                    a(href='#top') Top
-                li
-                    a(href='#about') About
-                li
-                    a(href='#live') Live
-                li
-                    a(href='#members') Members
-                li
-                    a(href='#blog') Blog
-                li
-                    a(href='#contact') Contact
+        //-     ul
+        //-         li
+        //-             a(href='#top') Top
+        //-         li
+        //-             a(href='#about') About
+        //-         li
+        //-             a(href='#live') Live
+        //-         li
+        //-             a(href='#members') Members
+        //-         li
+        //-             a(href='#blog') Blog
+        //-         li
+        //-             a(href='#contact') Contact
         .contents 
             section#top.background 
                 .photo_bg
-                .scrollable_area
-                    .container
-                        .transparent_bg
-                            .slogan 熱い音楽をみんなで
-                        #about.glass_bg 
-                            .title ABOUT
-                        #contact.glass_bg
-                            .title CONTACT
-                        #live.color_bg
-                            .title VIDEO
+
+                .container
+                    .transparent_bg
+                        .slogan 熱い音楽をみんなで
+                    section#about.glass_bg 
+                        .title ABOUT
+                    section#contact.glass_bg
+                        .title CONTACT
+                    section#live.color_bg
+                        .title VIDEO
             section#members.background 
             section#blog.background 
-        // コンテンツ
-        //- .contents
-            section#top.background
-                main
-                    .title
-                        .title_box
-                            h1.slogan 熱い音楽をみんなで
-                            h1.name 中央大学理工学部軽音学部
-            section#about.background
-                main
-                    .card_list
-                        .l-wrapper_02.card-radius_02
-                            article.card_02
-                                .card__header_02
-                                    p.card__title_02 成り立ち
-                                    figure.card__thumbnail_02
-                                        img.card__image_02(src='https://dubdesign.net/wp-content/uploads/2020/05/0514_inhouse_designereyecatch.jpg' alt='サムネイル')
-                                .card__body_02
-                                    p.card__text2_02
-                                        | 中央大学理工学部軽音学部とは中央大学の後楽園キャンパスを中心に活動を行っている軽音サークルです。
-                                        | こう見えてもわりと長い歴史があるんです。
-                                        | 元は「ヨishoの会」という軽音楽部のサークルで最初は夜間部のサークルとして誕生したそうです。
-                                        | その後ヨishoの会から中大軽音とF＆Rという2つの軽音サークルにわかれたと聞いています。
-                        .l-wrapper_02.card-radius_02
-                            article.card_02
-                                .card__header_02
-                                    p.card__title_02 交流校様
-                                    figure.card__thumbnail_02
-                                        img.card__image_02(src='https://dubdesign.net/wp-content/uploads/2020/05/0514_inhouse_designereyecatch.jpg' alt='サムネイル')
-                                .card__body_02
-                                    p.card__text2_02
-                                        | 日本女子大学軽音楽研究会・東京工業大学ロック研究会・東京工業大学FSC
-                                        | 東京理科大学軽音楽ロック研究会・大妻女子大学多摩校軽音楽部・大妻短期女子大学
-                        .l-wrapper_02.card-radius_02
-                            article.card_02
-                                .card__header_02
-                                    p.card__title_02 過去にコピーしたバンド
-                                    figure.card__thumbnail_02
-                                        img.card__image_02(src='https://dubdesign.net/wp-content/uploads/2020/05/0514_inhouse_designereyecatch.jpg' alt='サムネイル')
-                                .card__body_02
-                                    p.card__text2_02 内容
-            section#live.background
-                main
-                    .card_list
-                        .l-wrapper_02.card-radius_02
-                            article.card_02
-                                .card__header_02
-                                    p.card__title_02 2019年
-                                    figure.card__thumbnail_02
-                                        img.card__image_02(src='https://dubdesign.net/wp-content/uploads/2020/05/0514_inhouse_designereyecatch.jpg' alt='サムネイル')
-                                .card__body_02
-                                    p.card__text2_02
-                                        | 4/11 メジャコ中軽合同新歓ライブ(@大塚deepa)
-                                        br
-                                        |                                     5/12 中軽デビューライブ(@新宿 Cat's hole)
-                                        br
-                                        |                                     6/30 中軽妻多摩ジョイント(@新宿 Cat's hole)
-                                        br
-                                        |                                     8/14 中軽夏定(@新宿 Wildside)
-                                        br
-                                        |                                     9/13 中軽本女ジョイント(@四ツ谷Lotus)
-                                        br
-                                        |                                     9/29 中軽メタルパーク(@池袋 Black Hole)
-                                        br
-                                        |                                     12/1 中軽1,2年企画(@新宿Marble)
-                                        br
-                                        |                                     12/25 中軽引退(@新宿 Wildside)
-                                        br
-                                        |                                     2/13 中軽冬定(＠新宿 Wildside)
-                                        br
-                        .l-wrapper_02.card-radius_02
-                            article.card_02
-                                .card__header_02
-                                    p.card__title_02 2018
-                                    figure.card__thumbnail_02
-                                        img.card__image_02(src='https://dubdesign.net/wp-content/uploads/2020/05/0514_inhouse_designereyecatch.jpg' alt='サムネイル')
-                                .card__body_02
-                                    p.card__text2_02
-                                        | 4/12 メジャコ中軽合同新歓ライブ(＠大塚deepa)
-                                        br
-                                        |                                     5/13 中軽デビューライブ(＠新宿Cat's hole)
-                                        br
-                                        |                                     6/1 立教ジョイント(@池袋Black hole)
-                                        br
-                                        |                                     7/1 中軽妻多摩ジョイント(@四ツ谷outbreak)
-                                        br
-                                        |                                     8/15中軽夏定(@四ツ谷lotus)
-                                        br
-                                        |                                     9/14本女ジョイント(@四ツ谷lotus)
-                                        br
-                                        |                                     9/30メタルパーク(@新宿Wildside)
-                                        br
-                                        |                                     12/2中軽1,2年企画(＠東高円寺 LA)
-                                        br
-                                        |                                     12/28 中軽引退(@新宿zirco)
-                                        br
-                                        |                                     2/20 中軽冬定(@新宿Wildside) 
-                                        br
-                        .l-wrapper_02.card-radius_02
-                            article.card_02
-                                .card__header_02
-                                    p.card__title_02 2017年
-                                    figure.card__thumbnail_02
-                                        img.card__image_02(src='https://dubdesign.net/wp-content/uploads/2020/05/0514_inhouse_designereyecatch.jpg' alt='サムネイル')
-                                .card__body_02
-                                    p.card__text2_02
-            section#members.background
-                main
-                    .card_list
-                        .l-wrapper_02.card-radius_02
-                            article.card_02
-                                .card__header_02
-                                    p.card__title_02 2019年
-                                    figure.card__thumbnail_02
-                                        img.card__image_02(src='https://dubdesign.net/wp-content/uploads/2020/05/0514_inhouse_designereyecatch.jpg' alt='サムネイル')
-                                .card__body_02
-                                    p.card__text2_02 内容
-                        .l-wrapper_02.card-radius_02
-                            article.card_02
-                                .card__header_02
-                                    p.card__title_02 交流校様
-                                    figure.card__thumbnail_02
-                                        img.card__image_02(src='https://dubdesign.net/wp-content/uploads/2020/05/0514_inhouse_designereyecatch.jpg' alt='サムネイル')
-                                .card__body_02
-                                    p.card__text2_02 内容
-                        .l-wrapper_02.card-radius_02
-                            article.card_02
-                                .card__header_02
-                                    p.card__title_02 過去にコピーしたバンド
-                                    figure.card__thumbnail_02
-                                        img.card__image_02(src='https://dubdesign.net/wp-content/uploads/2020/05/0514_inhouse_designereyecatch.jpg' alt='サムネイル')
-                                .card__body_02
-                                    p.card__text2_02
-
-            section#blog.background
-                main
-            section#contact.background
-                main
-
         script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js")
         script(src="./assets/js/animation.js" charset="utf-8")

@@ -1,58 +1,58 @@
 .contents
     width: 100%
     height: 100vh
-    scroll-snap-type: y mandatory
+    scroll-snap-type: y proximity
     overflow-x: hidden
 
     #top
         position: relative
-        height: 100vh
+        height: 300vh
         .photo_bg
             background-image: url("../img/bg07.jpg")
             background-size: cover
             background-position: center
             height: 100vh
-            width: 120vw
-            position: absolute
+            width: 150vw
+            position: sticky
+            top: 0
             pointer-events: none
+            z-index: -1
 
-        .scrollable_area
-            overflow: scroll
-            height: 100vh
-
-            .container
-                .transparent_bg
+        .container
+            position: relative
+            top: -100vh
+            .transparent_bg
+                position: relative
+                height: 100vh
+                width: 100vw
+                .slogan
                     position: relative
-                    height: 100vh
-                    width: 100vw
-                    .slogan
-                        position: relative
-                        writing-mode: vertical-rl
-                        font-size: 9vh
-                        top: 2vh
-                        left: 2vw
-                        color: rgb(124, 0, 0)
-                        font-weight: bold
-                        mix-blend-mode: multiply
-                .glass_bg
-                    position: relative
-                    width: 100vw
-                    height: 300vh
-                    background-color: rgba(62, 102, 172, 0.535)
-                    backdrop-filter: blur(5px)
+                    writing-mode: vertical-rl
+                    font-size: 9vh
+                    top: 2vh
+                    left: 2vw
+                    color: rgb(124, 0, 0)
+                    font-weight: bold
+                    mix-blend-mode: multiply
+            .glass_bg
+                position: relative
+                width: 100vw
+                height: 300vh
+                background-color: rgba(62, 102, 172, 0.535)
+                backdrop-filter: blur(5px)
 
-                    padding: 5vmin 10vmin
-                .color_bg
-                    position: relative
-                    background-color: rgb(39, 52, 172)
-                    height: 100vh
-                    width: 100vw
-                    padding: 5vmin 10vmin
+                padding: 5vmin 10vmin
+            .color_bg
+                position: relative
+                background-color: rgb(39, 52, 172)
+                height: 100vh
+                width: 100vw
+                padding: 5vmin 10vmin
 
-                #about
-                    height: 50vh
-                #contact
-                    height: 50vh
+            #about
+                height: 50vh
+            #contact
+                height: 50vh
 
 #members
     background-image: url("../img/bg01.jpg")

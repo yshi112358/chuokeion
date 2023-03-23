@@ -22,7 +22,11 @@ body {
 .title {
   font-family: "metal";
   color: white;
-  font-size: 10vmin;
+  font-size: 15vmin;
+  transform: scaleX(0.7);
+  transform-origin: left;
+  position: relative;
+  height: 15vmin;
 }
 
 .background {

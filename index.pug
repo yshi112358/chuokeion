@@ -20,28 +20,27 @@ html(lang='ja')
             gtag('config', 'G-QGBQMTJ17N');
     body
         //- #loading
+        .menu_list
+            a(href='#top' onclick="window.menuClose()") Top
+            a(href='#about' onclick="window.menuClose()") About
+            a(href='#live' onclick="window.menuClose()") Live
+            a(href='#members' onclick="window.menuClose()") Members
+            a(href='#blog' onclick="window.menuClose()") Blog
+            a(href='#contact' onclick="window.menuClose()") Contact
 
-        //- nav.menubar
-        //-     ul
-        //-         li
-        //-             a(href='#top') Top
-        //-         li
-        //-             a(href='#about') About
-        //-         li
-        //-             a(href='#live') Live
-        //-         li
-        //-             a(href='#members') Members
-        //-         li
-        //-             a(href='#blog') Blog
-        //-         li
-        //-             a(href='#contact') Contact
+        .menubar
+            .menu_button(onclick="window.menuOpen()")
+                .d_line.d_line1 
+                .d_line.d_line2 
+                .d_line.d_line3
+
         .contents 
             section#top.background 
                 .photo_bg
+                    .slogan 熱い音楽をみんなで
 
                 .container
                     .transparent_bg
-                        .slogan 熱い音楽をみんなで
                     section#about.glass_bg 
                         .title ABOUT
                     section#contact.glass_bg
@@ -52,4 +51,5 @@ html(lang='ja')
             section#blog.background 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
         script(src="./assets/js/animation.js" charset="utf-8")

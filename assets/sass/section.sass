@@ -1,39 +1,37 @@
 .contents
     width: 100%
     height: 100vh
-    scroll-snap-type: y proximity
+    scroll-snap-type: y mandatory
     overflow-x: hidden
+    position: relative
 
     #top
         position: relative
-        height: 300vh
         .photo_bg
             background-image: url("../img/bg07.jpg")
             background-size: cover
             background-position: center
             height: 100vh
             width: 150vw
-            position: sticky
-            top: 0
+            position: fixed
             pointer-events: none
             z-index: -1
-
+            .slogan
+                position: relative
+                writing-mode: vertical-rl
+                font-size: 9vh
+                top: 2vh
+                left: 2vw
+                color: rgb(124, 0, 0)
+                font-weight: bold
+                mix-blend-mode: darken
         .container
             position: relative
-            top: -100vh
             .transparent_bg
                 position: relative
                 height: 100vh
                 width: 100vw
-                .slogan
-                    position: relative
-                    writing-mode: vertical-rl
-                    font-size: 9vh
-                    top: 2vh
-                    left: 2vw
-                    color: rgb(124, 0, 0)
-                    font-weight: bold
-                    mix-blend-mode: multiply
+
             .glass_bg
                 position: relative
                 width: 100vw
@@ -50,9 +48,13 @@
                 padding: 5vmin 10vmin
 
             #about
-                height: 50vh
+                height: 120vh
+                border-top-right-radius: 50vmin
+                .title
+                    top: 30px
             #contact
-                height: 50vh
+                height: 70vh
+            #live
 
 #members
     background-image: url("../img/bg01.jpg")

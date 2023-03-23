@@ -3,34 +3,54 @@
 .menubar {
   position: fixed;
   z-index: 10;
-  width: 15vw;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
+  width: 10px;
+  height: 100vh;
+  right: 0;
+  background-color: rgb(9, 99, 255);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  transform-origin: 0 0;
 }
-.menubar ul {
-  width: 100%;
-  height: 100%;
+.menubar .menu_button {
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  right: 0;
+  bottom: 5vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.menubar .menu_button .d_line {
+  position: relative;
+  background-color: white;
+  width: 40px;
+  height: 5px;
+}
+.menubar .menu_button .d_line1 {
+  margin-left: 10px;
+}
+.menubar .menu_button .d_line3 {
+  margin-right: 10px;
+}
+
+.menu_list {
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  position: fixed;
+  background-color: white;
   display: flex;
   flex-flow: column;
   justify-content: space-around;
 }
-.menubar li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation-name: opa1;
-  animation-delay: 1S;
-  animation-duration: 1S;
-  animation-fill-mode: both;
-}
-.menubar li a {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
+.menu_list a {
   text-decoration: none;
   display: block;
-  text-align: center;
-  font-size: 5vmin;
-  color: #fff;
+  text-align: right;
+  font-size: 10vh;
+  color: #000000;
+  padding-right: 30px;
+  width: 100vw;
 }/*# sourceMappingURL=menubar.css.map */

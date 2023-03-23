@@ -1,12 +1,12 @@
 .contents {
   width: 100%;
   height: 100vh;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
   overflow-x: hidden;
+  position: relative;
 }
 .contents #top {
   position: relative;
-  height: 300vh;
 }
 .contents #top .photo_bg {
   background-image: url("../img/bg07.jpg");
@@ -14,21 +14,11 @@
   background-position: center;
   height: 100vh;
   width: 150vw;
-  position: sticky;
-  top: 0;
+  position: fixed;
   pointer-events: none;
   z-index: -1;
 }
-.contents #top .container {
-  position: relative;
-  top: -100vh;
-}
-.contents #top .container .transparent_bg {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-}
-.contents #top .container .transparent_bg .slogan {
+.contents #top .photo_bg .slogan {
   position: relative;
   writing-mode: vertical-rl;
   font-size: 9vh;
@@ -36,7 +26,15 @@
   left: 2vw;
   color: rgb(124, 0, 0);
   font-weight: bold;
-  mix-blend-mode: multiply;
+  mix-blend-mode: darken;
+}
+.contents #top .container {
+  position: relative;
+}
+.contents #top .container .transparent_bg {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 .contents #top .container .glass_bg {
   position: relative;
@@ -55,12 +53,15 @@
   padding: 5vmin 10vmin;
 }
 .contents #top .container #about {
-  height: 50vh;
+  height: 120vh;
+  border-top-right-radius: 50vmin;
+}
+.contents #top .container #about .title {
+  top: 30px;
 }
 .contents #top .container #contact {
-  height: 50vh;
+  height: 70vh;
 }
-
 #members {
   background-image: url("../img/bg01.jpg");
 }

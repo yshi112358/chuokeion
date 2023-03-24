@@ -6,12 +6,13 @@
   width: 10px;
   height: 100vh;
   right: 0;
-  background-color: rgb(9, 99, 255);
+  background-color: rgb(81, 134, 226);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   transform-origin: 100% 0;
 }
-.menubar .menu_button {
+
+.menu_button {
   width: 50px;
   height: 70px;
   position: absolute;
@@ -21,17 +22,18 @@
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
+  z-index: 15;
 }
-.menubar .menu_button .d_line {
+.menu_button .d_line {
   position: relative;
   background-color: white;
   width: 40px;
   height: 5px;
 }
-.menubar .menu_button .d_line1 {
+.menu_button .d_line1 {
   margin-left: 10px;
 }
-.menubar .menu_button .d_line3 {
+.menu_button .d_line3 {
   margin-right: 10px;
 }
 

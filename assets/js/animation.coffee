@@ -20,16 +20,21 @@ gsap.timeline(
 		# markers: true)
 	.to '.menubar', scaleY: 1
 	.to '.menu_button', x: 0, '<'
+
+windowWidth = window.outerWidth
+windowHeight = window.outerHeight
+
+gsap.set '.color_bg', y: windowHeight
 gsap.timeline(
 	scrollTrigger:
 		trigger: '#live'
-		start: 'bottom-200'
-		end: 'bottom'
-		scrub: 1)
-		# markers: true)
-	.to '.menubar', scaleX: 0
+		start: 'bottom bottom'
+		end: 'bottom top'
+		scrub: 1
+		pin: true
+		markers: true)
+	.to '.color_bg', y: 0
 
-windowWidth = window.outerWidth
 gsap.set '.menu_list', x: windowWidth
 window.menuOpen = ->
 	gsap.timeline()

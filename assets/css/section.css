@@ -79,15 +79,18 @@
   color: white;
   text-align: right;
 }
-.contents #top .container .color_bg {
-  position: relative;
-  background-color: rgb(39, 52, 172);
+.contents #top .color_bg {
+  position: fixed;
+  background-color: rgb(62, 102, 172);
   height: 100vh;
   width: 100vw;
   padding: 5vmin 10vmin;
   overflow-y: hidden;
+  z-index: 10;
+  top: 0;
+  pointer-events: none;
 }
-.contents #top .container .color_bg .album_container {
+.contents #top .color_bg .album_container {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -96,7 +99,7 @@
   padding: 2vw;
   left: -10vw;
 }
-.contents #top .container .color_bg .album_container .jacket {
+.contents #top .color_bg .album_container .jacket {
   width: 46vw;
   height: auto;
   aspect-ratio: 1/1;

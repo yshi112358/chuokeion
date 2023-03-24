@@ -24,17 +24,6 @@ gsap.timeline(
 windowWidth = window.outerWidth
 windowHeight = window.outerHeight
 
-gsap.set '.color_bg', y: windowHeight
-gsap.timeline(
-	scrollTrigger:
-		trigger: '#live'
-		start: 'bottom bottom'
-		end: 'bottom top'
-		scrub: 1
-		pin: true
-		markers: true)
-	.to '.color_bg', y: 0
-
 gsap.set '.menu_list', x: windowWidth
 window.menuOpen = ->
 	gsap.timeline()

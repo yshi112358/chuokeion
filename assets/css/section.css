@@ -78,39 +78,4 @@
   font-size: 14px;
   color: white;
   text-align: right;
-}
-.contents #top .color_bg {
-  position: fixed;
-  background-color: rgb(62, 102, 172);
-  height: 100vh;
-  width: 100vw;
-  padding: 5vmin 10vmin;
-  overflow-y: hidden;
-  z-index: 10;
-  top: 0;
-  pointer-events: none;
-}
-.contents #top .color_bg .album_container {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100vw;
-  padding: 2vw;
-  left: -10vw;
-}
-.contents #top .color_bg .album_container .jacket {
-  width: 46vw;
-  height: auto;
-  aspect-ratio: 1/1;
-  border: solid 2px black;
-  margin: 1vw;
-}
-
-#members {
-  background-image: url("../img/bg01.jpg");
-}
-
-#blog {
-  background-color: black;
 }/*# sourceMappingURL=section.css.map */
